@@ -5,16 +5,10 @@ public class AuthorParser {
   private String author_email;
   private String author_url;
 
-  protected void setName(String newName) {
-    this.author_name = newName;
-  }
-
-  protected void setEmail(String newEmail) {
-    this.author_email = newEmail;
-  }
-
-  protected void setUrl(String newUrl) {
-    this.author_url = newUrl;
+  public AuthorParser(String author_name, String author_email, String author_url) {
+    this.author_name = author_name;
+    this.author_email = author_email;
+    this.author_url = author_url;
   }
 
   protected String getName() {
